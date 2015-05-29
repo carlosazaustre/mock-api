@@ -1,13 +1,13 @@
 'use strict'
 
-const course = require('course')
-const http = require('http')
-const fs = require('fs')
-const path = require('path')
+var course = require('course')
+var http = require('http')
+var fs = require('fs')
+var path = require('path')
 
-const port = process.env.port || 3000
-const server = http.createServer()
-const router = course()
+var port = process.env.port || 3000
+var server = http.createServer()
+var router = course()
 
 // -- Events -------------------------------------------------------------------
 
@@ -24,20 +24,20 @@ server.listen(port)
 // -- Controllers --------------------------------------------------------------
 
 function getAll (req, res) {
-  let rs = fs.createReadStream( path.join(__dirname, 'db', 'empleados.json') )
+  var rs = fs.createReadStream( path.join(__dirname, 'db', 'empleados.json') )
   rs.pipe(res)
 }
 
 function getEmpleado (req, res) {
-  let file = path.join(__dirname, 'db', this.id + '.json')
-  let rs = fs.createReadStream(file)
+  var file = path.join(__dirname, 'db', this.id + '.json')
+  var rs = fs.createReadStream(file)
   rs.pipe(res)
 }
 
 // -- Handlers -----------------------------------------------------------------
 
 function onListening () {
-  console.log(`Server running on port ${port}`)
+  console.log("Server running on port: " + port)
 }
 
 function onRequest (req, res) {

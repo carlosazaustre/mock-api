@@ -10,8 +10,5 @@
   "license": "BSD",
   "dependencies": {
     "course": "0.0.1"
-  },
-  "engines": {
-    "iojs": "2.1.x"
   }
 }
