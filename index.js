@@ -1,34 +1,49 @@
 'use strict'
 
-const express = require('express')
-const bodyParser = require('body-parser')
+const course = require('course')
+const http = require('http')
 const fs = require('fs')
 const path = require('path')
 
 const port = process.env.port || 3000
-const app = express()
+const server = http.createServer()
+const router = course()
 
-app.use(bodyParser.urlencoded({ extended : false }))
-app.use(bodyParser.json())
+// -- Events -------------------------------------------------------------------
 
+server.on('listening', onListening)
+server.on('request', onRequest)
 
-// -- API routes ---------------------------------------------------------------
+// -- API routes and running ---------------------------------------------------
 
-app.get('/empleados', function(req, res) {
+router.get('/empleados', getAll)
+router.get('/empleados/:id', getEmpleado)
+
+server.listen(port)
+
+// -- Controllers --------------------------------------------------------------
+
+function getAll (req, res) {
   let rs = fs.createReadStream( path.join(__dirname, 'db', 'empleados.json') )
   rs.pipe(res)
-})
+}
 
-app.get('/empleados/:id', function(req, res) {
-  let file = path.join(__dirname, 'db', req.params.id + '.json')
+function getEmpleado (req, res) {
+  let file = path.join(__dirname, 'db', this.id + '.json')
   let rs = fs.createReadStream(file)
   rs.pipe(res)
-})
+}
 
-// -- App running --------------------------------------------------------------
-
-app.listen(port, onListening)
+// -- Handlers -----------------------------------------------------------------
 
 function onListening () {
   console.log(`Server running on port ${port}`)
+}
+
+function onRequest (req, res) {
+  router(req, res, function(err) {
+    if (err) return res.end(err.message)
+
+    res.end('404')
+  })
 }

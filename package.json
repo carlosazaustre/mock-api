@@ -9,10 +9,6 @@
   "author": "Carlos Azaustre <cazaustre@gmail.com>",
   "license": "BSD",
   "dependencies": {
-    "body": "^5.0.0",
-    "body-parser": "^1.12.4",
-    "course": "0.0.1",
-    "express": "^4.12.4",
-    "mongoose": "^4.0.3"
+    "course": "0.0.1"
   }
 }
