@@ -2,10 +2,8 @@
 
 const express = require('express')
 const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
 const fs = require('fs')
 const path = require('path')
-//const Empleado = require('./models/empleado')
 
 const port = process.env.port || 3000
 const app = express()
@@ -27,14 +25,9 @@ app.get('/empleados/:id', function(req, res) {
   rs.pipe(res)
 })
 
-mongoose.connect('mongodb://localhost/empleados', onConnected);
+// -- App running --------------------------------------------------------------
 
-function onConnected (err, res) {
-  if (err) throw err
-
-  console.log('Connected to Database')
-  app.listen(port, onListening)
-}
+app.listen(port, onListening)
 
 function onListening () {
   console.log(`Server running on port ${port}`)
