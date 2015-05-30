@@ -20,6 +20,8 @@ server.on('request', onRequest)
 
 // -- API routes, static files and running ---------------------------------------------------
 
+router.all(cors)
+
 router.get('/empleados', getAll)
 router.get('/empleados/:id', getEmpleado)
 router.get('/asset/:file', getAsset)
@@ -27,6 +29,14 @@ router.get('/asset/:file', getAsset)
 server.listen(port)
 
 // -- Controllers --------------------------------------------------------------
+
+function cors (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept')
+  res.setHeader('Access-Control-Allow-Credentials', true)
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
+  next()
+}
 
 function getAll (req, res) {
   var rs = fs.createReadStream( path.join(__dirname, 'db', 'empleados.json') )
