@@ -4,7 +4,7 @@
   "description": "API Server to Angular Course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Carlos Azaustre <cazaustre@gmail.com>",
   "license": "BSD",
