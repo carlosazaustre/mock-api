@@ -11,7 +11,7 @@
   "cellPhone": "714 408 996",
   "email": "EllenBalderasNevarez@teleworm.us",
   "city": "Barcelona, ES",
-  "pic": "empleado07.png",
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado07.png",
   "twitterId": "@ellen",
   "blog": "http://carlosazaustre.es"
 }

@@ -11,7 +11,7 @@
   "cellPhone": "743 972 334",
   "email": "MahaRamnPeres@armyspy.com",
   "city": "Albacete, ES",
-  "pic": "empleado06.png",
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado06.png",
   "twitterId": "@martaperez",
   "blog": "http://carlosazaustre.es"
 }

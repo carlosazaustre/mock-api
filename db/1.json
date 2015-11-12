@@ -11,7 +11,7 @@
   "cellPhone": "773 506 253",
   "email": "LayaDueasGranados@jourrapide.com",
   "city": "Madrid, ES",
-  "pic": "empleado01.png",
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado01.png",
   "twitterId": "@layaduenas",
   "blog": "http://carlosazaustre.es"
 }

@@ -11,7 +11,7 @@
   "cellPhone": "606 361 011",
   "email": "ClidiaValentnBarragn@armyspy.com",
   "city": "Madrid, ES",
-  "pic": "empleado08.png",
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado08.png",
   "twitterId": "@cintiq",
   "blog": "http://carlosazaustre.es"
 }

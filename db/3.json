@@ -11,7 +11,7 @@
   "cellPhone": "786 042 170",
   "email": "ShantellMezaZapata@rhyta.com",
   "city": "Madrid, ES",
-  "pic": "empleado03.png",
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado03.png",
   "twitterId": "@shantell",
   "blog": "http://carlosazaustre.es"
 }

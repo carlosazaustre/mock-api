@@ -3,61 +3,61 @@
   "fullName": "Laya Dueñas",
   "title": "CEO",
   "department": "Corporate",
-  "pic": "empleado01.png"
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado01.png"
 },
 {
   "id": 2,
   "fullName": "Astryd Valles",
   "title": "CMO",
   "department": "Marketing",
-  "pic": "empleado02.png"
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado02.png"
 },
 {
   "id": 3,
   "fullName": "Shantell Meza",
   "title": "CFO",
   "department": "Corporate",
-  "pic": "empleado03.png"
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado03.png"
 },
 {
   "id": 4,
   "fullName": "Sergio Ocampo",
   "title": "CTO",
   "department": "Engineering",
-  "pic": "empleado04.png"
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado04.png"
 },
 {
   "id": 5,
   "fullName": "Ares Jimenez",
   "title": "Art Director",
   "department": "Marketing",
-  "pic": "empleado05.png"
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado05.png"
 },
 {
   "id": 6,
   "fullName": "Marta Pérez",
   "title": "Frontend Dev",
   "department": "Engineering",
-  "pic": "empleado06.png"
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado06.png"
 },
 {
   "id": 7,
   "fullName": "Ellen Balderas",
   "title": "Digital Strategy",
   "department": "Marketing",
-  "pic": "empleado07.png"
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado07.png"
 },
 {
   "id": 8,
   "fullName": "Cinthia Valentín",
   "title": "Backend Dev",
   "department": "Engineering",
-  "pic": "empleado08.png"
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado08.png"
 },
 {
   "id": 9,
   "fullName": "Bernd Jung",
   "title": "DevOps Engineer",
   "department": "Engineering",
-  "pic": "empleado09.png"
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado09.png"
 }]

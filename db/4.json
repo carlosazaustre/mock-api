@@ -11,7 +11,7 @@
   "cellPhone": "771 611 317",
   "email": "ServioOcampoGaona@rhyta.com",
   "city": "Córdoba, ES",
-  "pic": "empleado04.png",
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado04.png",
   "twitterId": "@sergiocampo",
   "blog": "http://carlosazaustre.es"
 }

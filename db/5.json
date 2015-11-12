@@ -11,7 +11,7 @@
   "cellPhone": "623 429 042",
   "email": "AresJimnezTrrez@teleworm.us",
   "city": "Madrid, ES",
-  "pic": "empleado05.png",
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado05.png",
   "twitterId": "@aresjim",
   "blog": "http://carlosazaustre.es"
 }

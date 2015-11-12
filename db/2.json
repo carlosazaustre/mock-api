@@ -11,7 +11,7 @@
   "cellPhone": "608 083 642",
   "email": "strydVallesPacheco@jourrapide.com",
   "city": "Madrid, ES",
-  "pic": "empleado02.png",
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado02.png",
   "twitterId": "@astryd",
   "blog": "http://carlosazaustre.es"
 }

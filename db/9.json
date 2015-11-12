@@ -11,7 +11,7 @@
   "cellPhone": "686 214 566",
   "email": "BerndJung@teleworm.us",
   "city": "Munich, ALE",
-  "pic": "empleado09.png",
+  "pic": "https://empleados-api.herokuapp.com/asset/empleado09.png",
   "twitterId": "@berndjung",
   "blog": "http://carlosazaustre.es"
 }
