@@ -44,9 +44,16 @@ function getAll (req, res) {
 }
 
 function getEmpleado (req, res) {
-  var file = path.join(__dirname, 'db', this.id + '.json')
-  var rs = fs.createReadStream(file)
-  rs.pipe(res)
+  if( this.id < 1 || this.id > 9 || isNaN(this.id) ) {
+    var file = path.join(__dirname, 'db', '1.json');
+    var rs = fs.createReadStream(file);
+    rs.pipe(res);
+
+  } else {
+    var file = path.join(__dirname, 'db', this.id + '.json')
+    var rs = fs.createReadStream(file)
+    rs.pipe(res)
+  }
 }
 
 function getAsset (req, res) {
